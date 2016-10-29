@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 
-protocol TouchActionDelegate{
-    func touchTileEvent()
-}
 
 class StageView: UIView {
 
@@ -150,7 +147,6 @@ class StageView: UIView {
         if( ( activeTilePos.iniValue_activeTile != activeTilePos.x )
          || ( activeTilePos.iniValue_activeTile != activeTilePos.y ) ){
             inactiveTileProcessing()
-            self.delegate?.touchTileEvent()
         }
         else{}
         
